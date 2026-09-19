@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petro Bridge Trading | Global Trade Solutions in Oil &amp; Gas Products</title>
+<meta name="description" content="Petro Bridge Trading FZE connects reliable supply with global demand in oil and gas products. Based in the Hamriyah Free Zone, Sharjah, UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#F1F5FC; --card:#ffffff; --ink:#0E1B3D; --muted:#4A5878; --line:#D8E1F1;
+  --navy:#0A2A6B; --navy-deep:#061848; --blue:#2B6CD6; --sky:#7FAAF2;
+  --head:#0A2A6B; --link:#0A2A6B; --btn:#0A2A6B; --btn-ink:#ffffff; --mark:#DCE6F7;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --maxw:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#071433; --surface:#0A1B45; --card:#0E2255; --ink:#E9EFFC; --muted:#A5B3D3; --line:#1E346C;
+    --navy:#0C2262; --navy-deep:#050F2C; --head:#EAF0FD; --link:#8DB6F5; --btn:#2B6CD6; --mark:#12296A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#071433; --surface:#0A1B45; --card:#0E2255; --ink:#E9EFFC; --muted:#A5B3D3; --line:#1E346C;
+  --navy:#0C2262; --navy-deep:#050F2C; --head:#EAF0FD; --link:#8DB6F5; --btn:#2B6CD6; --mark:#12296A;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:var(--link)}
+h1,h2,h3{font-family:var(--serif);color:var(--head);line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:600}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:999px;font:600 1rem var(--sans);text-decoration:none;border:2px solid var(--btn);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-primary{background:var(--btn);color:var(--btn-ink)}
+.btn-primary:hover{background:var(--blue);border-color:var(--blue)}
+.btn-ghost{background:transparent;color:var(--link);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--link)}
+
+/* Header */
+header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--head)}
+.brand svg{width:34px;height:42px;color:var(--navy);--cut:var(--bg)}
+:root[data-theme="dark"] .brand svg{color:#5B95E8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand svg{color:#5B95E8}}
+.brand b{display:block;font:600 1.45rem/1 var(--serif);letter-spacing:-.01em}
+.brand small{display:block;font:600 .68rem/1.3 var(--sans);color:var(--blue);letter-spacing:.02em;margin-top:3px}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.98rem}
+nav a:hover{color:var(--blue)}
+.menu-btn{display:none;background:none;border:2px solid var(--line);border-radius:10px;width:44px;height:44px;color:var(--ink);cursor:pointer}
+.menu-btn span{display:block;width:20px;height:2px;background:currentColor;margin:4px auto;transition:.2s}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  nav{position:absolute;left:0;right:0;top:76px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px}
+  nav li a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  nav li:last-child a{border:0;margin-top:14px;text-align:center;justify-content:center}
+}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--bg)}
+.hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:72px 24px 56px}
+.hero-copy{max-width:540px}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.5rem);font-weight:700;margin-bottom:.35em}
+.hero .lede{font-size:1.2rem;color:var(--muted);max-width:32em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .tagline{display:inline-block;font-weight:700;color:var(--blue);margin-bottom:18px;font-size:1rem}
+.art{position:relative;color:#fff;animation:wipe 1.5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes wipe{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion: reduce){.art{animation:none}html{scroll-behavior:auto}}
+.art-bg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.art-bg.wide{display:none}
+.art-body{position:relative;padding:56px 24px 28px}
+.skyline{display:block;width:100%;max-width:520px;height:auto;margin:0 auto}
+.pillars{list-style:none;margin:26px auto 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:20px 8px;max-width:520px}
+.pillars li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;font:600 .74rem/1.25 var(--sans);letter-spacing:.03em;text-transform:uppercase}
+.pillars svg{width:46px;height:46px}
+/* mobile: navy panel beneath copy, curve on top */
+.art-bg.tall{display:block}
+@media (min-width:960px){
+  .hero-inner{min-height:640px;display:flex;align-items:center}
+  .hero-copy{max-width:min(540px,42vw)}
+  .art{position:absolute;right:0;top:0;bottom:0;width:62%;z-index:1}
+  .art-bg.tall{display:none}
+  .art-bg.wide{display:block}
+  .art-body{position:absolute;inset:0;padding:0 40px 0 34%;display:flex;flex-direction:column;justify-content:center}
+  .pillars{grid-template-columns:repeat(4,1fr);gap:0;max-width:none;margin-top:34px}
+  .pillars li{padding:0 6px;border-left:1px solid rgba(255,255,255,.25)}
+  .pillars li:first-child{border-left:0}
+  .skyline{max-width:none}
+}
+.hero-rule{height:4px;background:linear-gradient(90deg,var(--navy),var(--blue));}
+
+/* Sections */
+section{padding:96px 0}
+.alt{background:var(--surface)}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head p{color:var(--muted);font-size:1.1rem}
+
+/* About */
+.about{position:relative;overflow:hidden}
+.about-grid{display:grid;gap:48px;grid-template-columns:1fr}
+.about .mark{position:absolute;right:-40px;bottom:-60px;width:min(46vw,420px);color:var(--mark);--cut:var(--bg);pointer-events:none}
+.about-text{max-width:620px;position:relative}
+.about-text p{color:var(--muted)}
+.about-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:18px;position:relative}
+.about-list li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.about-list .dot{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center}
+.about-list .dot svg{width:22px;height:22px}
+.about-list strong{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--head)}
+.about-list span{color:var(--muted)}
+@media (min-width:960px){.about-grid{grid-template-columns:1.2fr .8fr}}
+
+/* Products */
+.prod{display:grid;gap:24px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.tabs button{flex:0 0 auto;font:600 1rem var(--sans);padding:.7rem 1.1rem;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:.2s}
+.tabs button:hover{border-color:var(--blue)}
+.tabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:grid;gap:28px}
+.panel h3{font-size:1.7rem;margin-bottom:.3em}
+.panel p{color:var(--muted);margin:0}
+.panel dl{margin:0;display:grid;gap:18px}
+.panel dt{font-weight:700;color:var(--head);margin-bottom:6px}
+.panel dd{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.3rem .7rem;font-size:.95rem}
+.note{font-size:.95rem;color:var(--muted);margin-top:20px}
+@media (min-width:860px){.panel{grid-template-columns:1fr 1fr;padding:44px}.panel .full{grid-column:1/-1}}
+
+/* Process */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 32px 64px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:600 1.1rem var(--serif);z-index:1}
+.steps li::after{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps h3{margin-bottom:.15em}
+.steps p{color:var(--muted);margin:0}
+@media (min-width:960px){
+  .steps{grid-template-columns:repeat(6,1fr);gap:20px}
+  .steps li{padding:64px 0 0}
+  .steps li::after{left:44px;right:-20px;top:21px;bottom:auto;width:auto;height:2px}
+  .steps h3{font-size:1.15rem}
+  .steps p{font-size:.98rem}
+}
+
+/* Bridge */
+.bridge{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.bridge h2{color:#fff}
+.bridge .sec-head p{color:#C5D5F5}
+.arch{display:block;width:100%;height:auto;margin:0 0 8px}
+.tri{display:grid;gap:28px}
+.tri>div{border-top:3px solid var(--sky);padding-top:18px}
+.tri h3{color:#fff}
+.tri p{color:#C5D5F5;margin:0}
+.tri ul{margin:0;padding-left:1.1em;color:#C5D5F5}
+@media (min-width:860px){.tri{grid-template-columns:repeat(3,1fr)}}
+
+/* Values */
+.values{display:grid;gap:20px}
+.value{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.value svg{width:44px;height:44px;color:var(--blue);margin-bottom:12px}
+.value p{color:var(--muted);margin:0}
+@media (min-width:700px){.values{grid-template-columns:1fr 1fr}}
+@media (min-width:1040px){.values{grid-template-columns:repeat(4,1fr)}}
+
+/* Contact */
+.contact-grid{display:grid;gap:40px}
+.form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:grid;gap:18px}
+.row{display:grid;gap:18px}
+label{display:block;font-weight:600;margin-bottom:6px;color:var(--head)}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:12px;padding:.8rem 1rem}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 30%,transparent)}
+textarea{min-height:130px;resize:vertical}
+.status{min-height:1.5em;font-weight:600;color:var(--head);margin:0}
+.info{display:grid;gap:26px;align-content:start}
+.info h3{margin-bottom:.2em}
+.info p{margin:0;color:var(--muted)}
+.info a{font-weight:600}
+@media (min-width:700px){.row{grid-template-columns:1fr 1fr}}
+@media (min-width:960px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+
+/* Footer */
+footer{background:var(--surface);border-top:2px solid var(--blue);padding:44px 0 0;position:relative;overflow:hidden}
+.foot{display:grid;gap:28px}
+.foot h4{margin:0 0 6px;font:700 1rem var(--sans);color:var(--head)}
+.foot p{margin:0;color:var(--muted)}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--blue);text-decoration:underline}
+.foot .slogan{font:600 1.1rem/1.3 var(--serif);color:var(--head);border-left:3px solid var(--navy);padding-left:16px}
+@media (min-width:860px){.foot{grid-template-columns:1.2fr 1fr 1.1fr 1fr;align-items:start}}
+.legal{margin-top:36px;padding:18px 0;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.foot-curve{height:14px;background:linear-gradient(90deg,transparent 60%,var(--blue) 60%,var(--blue) 68%,var(--navy) 68%)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="logo" viewBox="0 0 64 80">
+      <path fill="currentColor" d="M32 1C32 1 5 33 5 54c0 14 11 23 27 23s27-9 27-23C59 33 32 1 32 1Z"/>
+      <path fill="var(--cut,#fff)" d="M32 28c4 8 10 14 10 23 0 8-5 12-10 12s-10-4-10-11c0-6 5-9 6-15 1 3 3 4 4 6 1-6 0-10 0-15Z"/>
+      <path fill="none" stroke="var(--cut,#fff)" stroke-width="2.4" d="M2 62Q32 51 62 62"/>
+      <path fill="var(--cut,#fff)" d="M15 76v-7a17 17 0 0 1 34 0v7Z"/>
+    </symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2.5S5.5 10 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 10 12 2.5 12 2.5Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5"/><path d="M2.5 12h19M4 7h16M4 17h16"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.5 4.5 5.5v6c0 5 3.2 8.6 7.5 10 4.3-1.4 7.5-5 7.5-10v-6L12 2.5Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></g></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 8 9l4 2 5-3 4 3.5"/><path d="M3 13.5 9 19l2-1.5M9 15l2.5 2.5M12 13l3 3M15 11l2.5 2.5L14 17l-1.5-1.5"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Petro Bridge Trading, home">
+      <svg viewBox="0 0 64 80" aria-hidden="true"><use href="#logo"/></svg>
+      <span><b>Petro Bridge Trading</b><small>BRIDGING ENERGY. BUILDING TRUST.</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#process">How we trade</a></li>
+        <li><a href="#network">Network</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-primary" href="#contact">Request a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="tagline">Global trade solutions in oil &amp; gas products</span>
+      <h1>Bridging energy. Building trust.</h1>
+      <p class="lede">We connect reliable supply with global demand through integrity, efficiency and excellence. Our base is the Hamriyah Free Zone in Sharjah, close to the Gulf's major shipping lanes.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Request a quote</a>
+        <a class="btn btn-ghost" href="#products">See our products</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="art">
+    <svg class="art-bg wide" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M17 100C19 56 44 12 82 -2L100 -2V100Z" fill="var(--blue)"/>
+      <path d="M21 100C23 58 47 15 85 -2L100 -2V100Z" fill="var(--navy)"/>
+    </svg>
+    <svg class="art-bg tall" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 9C34 14 68 7 100 -2V100H0Z" fill="var(--blue)"/>
+      <path d="M0 13C34 18 68 11 100 2V100H0Z" fill="var(--navy)"/>
+    </svg>
+    <div class="art-body">
+      <svg class="skyline" viewBox="0 0 440 190" role="img" aria-label="Illustration of a storage tank, refinery pipework, an offshore rig and a tanker ship">
+        <g fill="#A9C4F2" opacity=".55">
+          <ellipse cx="80" cy="66" rx="62" ry="12"/>
+          <rect x="18" y="66" width="124" height="82"/>
+          <ellipse cx="80" cy="148" rx="62" ry="8"/>
+          <rect x="162" y="92" width="16" height="56"/><ellipse cx="170" cy="92" rx="8" ry="4"/>
+          <rect x="186" y="80" width="20" height="68"/><ellipse cx="196" cy="80" rx="10" ry="4"/>
+          <path d="M240 148 262 22h12l22 126Z"/>
+          <rect x="255" y="34" width="26" height="8"/>
+          <rect x="248" y="66" width="40" height="5"/>
+          <rect x="300" y="84" width="4" height="64"/><rect x="304" y="84" width="24" height="4"/>
+          <path d="M338 140h88l-12 16h-66Z"/>
+          <rect x="384" y="118" width="26" height="22"/><rect x="392" y="104" width="4" height="14"/>
+          <rect x="350" y="126" width="30" height="14"/>
+        </g>
+        <g stroke="#0A2A6B" stroke-width="1.5" opacity=".6" fill="none">
+          <path d="M34 66v82M56 66v82M80 66v82M104 66v82M126 66v82"/>
+          <path d="M252 148 276 34M268 148 262 34M256 100h26M250 124h34M254 80h28"/>
+        </g>
+        <rect x="0" y="156" width="440" height="3" fill="#A9C4F2" opacity=".5"/>
+        <g fill="#A9C4F2" opacity=".28"><rect x="30" y="166" width="120" height="3"/><rect x="200" y="172" width="150" height="3"/><rect x="290" y="180" width="110" height="3"/></g>
+      </svg>
+      <ul class="pillars">
+        <li><svg><use href="#i-drop"/></svg>Premium quality products</li>
+        <li><svg><use href="#i-globe"/></svg>Global network</li>
+        <li><svg><use href="#i-shield"/></svg>Trust &amp; integrity</li>
+        <li><svg><use href="#i-link"/></svg>Reliable partner</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="hero-rule" aria-hidden="true"></div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <svg class="mark" viewBox="0 0 64 80" aria-hidden="true"><use href="#logo"/></svg>
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <h2>Oil and gas trading, without the guesswork.</h2>
+      <p>Petro Bridge Trading FZE is a Sharjah-based company that links producers and refiners with buyers around the world. We handle sourcing, paperwork and logistics, so each cargo arrives as agreed.</p>
+      <p>From the Hamriyah Free Zone we serve importers, distributors and fellow traders across the Gulf, Africa, Asia and Europe.</p>
+      <ul class="about-list">
+        <li><span class="dot"><svg><use href="#i-drop"/></svg></span><div><strong>Source</strong><span>We find supply that matches your specification, volume and timing.</span></div></li>
+        <li><span class="dot"><svg><use href="#i-shield"/></svg></span><div><strong>Verify</strong><span>Counterparties, documents and cargo quality are checked before money moves.</span></div></li>
+        <li><span class="dot"><svg><use href="#i-globe"/></svg></span><div><strong>Deliver</strong><span>We coordinate vessels, inspection and delivery to your port or terminal.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Products we trade</h2>
+      <p>Choose a product to see the grades we typically offer and how we deliver them.</p>
+    </div>
+    <div class="prod">
+      <div class="tabs" role="tablist" aria-label="Products" id="tabs"></div>
+      <div class="panel" role="tabpanel" id="panel" tabindex="0" aria-live="polite"></div>
+    </div>
+    <p class="note">Grades, origin and volumes vary with market availability. Every offer states its specification and terms in writing.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>How a deal works</h2>
+      <p>Six steps from first message to completed delivery, with documents at each stage.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Inquiry</h3><p>Tell us the product, quantity, destination and delivery window.</p></li>
+      <li><h3>Offer</h3><p>We send a priced offer with specification and delivery terms.</p></li>
+      <li><h3>Verification</h3><p>Both sides complete company checks and sanctions screening.</p></li>
+      <li><h3>Contract</h3><p>We agree the sales contract and the payment instrument.</p></li>
+      <li><h3>Shipment</h3><p>Independent inspection at loading, then cargo documents are issued.</p></li>
+      <li><h3>Completion</h3><p>Payment is settled against documents once discharge is confirmed.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- NETWORK / BRIDGE -->
+<section id="network" class="bridge">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>One bridge between both sides of the deal</h2>
+      <p>We sit between supply and demand, so producers reach new markets and buyers reach dependable sources.</p>
+    </div>
+    <svg class="arch" viewBox="0 0 1000 200" role="img" aria-label="An arch linking suppliers on the left to buyers on the right">
+      <path d="M40 170 C240 20 760 20 960 170" fill="none" stroke="#7FAAF2" stroke-width="6" stroke-linecap="round"/>
+      <path d="M40 186 C240 36 760 36 960 186" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+      <g stroke="#fff" stroke-opacity=".3" stroke-width="2"><path d="M180 96v90M300 65v121M420 48v138M500 45v141M580 48v138M700 65v121M820 96v90"/></g>
+      <line x1="0" y1="188" x2="1000" y2="188" stroke="#fff" stroke-opacity=".5" stroke-width="3"/>
+      <circle cx="40" cy="170" r="12" fill="#fff"/><circle cx="960" cy="170" r="12" fill="#fff"/>
+      <circle cx="500" cy="45" r="14" fill="#2B6CD6" stroke="#fff" stroke-width="3"/>
+    </svg>
+    <div class="tri">
+      <div><h3>Suppliers</h3><ul><li>Refineries and producers</li><li>Storage terminals</li><li>Authorised brokers</li></ul></div>
+      <div><h3>Petro Bridge, Sharjah</h3><ul><li>Sourcing and price discovery</li><li>Counterparty verification</li><li>Contracts and documents</li><li>Shipping and inspection</li></ul></div>
+      <div><h3>Buyers</h3><ul><li>Importers and distributors</li><li>Traders and resellers</li><li>Industrial end users</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="why" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Why partners work with us</h2></div>
+    <div class="values">
+      <div class="value"><svg><use href="#i-drop"/></svg><h3>Premium quality products</h3><p>Each product comes with a full specification and can be inspected independently at loading.</p></div>
+      <div class="value"><svg><use href="#i-globe"/></svg><h3>Global network</h3><p>Working relationships with producers, terminals and shipping agents across four regions.</p></div>
+      <div class="value"><svg><use href="#i-shield"/></svg><h3>Trust and integrity</h3><p>Clear terms, verified counterparties, and documents that match what is shipped.</p></div>
+      <div class="value"><svg><use href="#i-link"/></svg><h3>Reliable partner</h3><p>One point of contact from the first inquiry to the final discharge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:28px"><h2>Request a quote</h2><p>Share what you need. We reply with an offer or a follow-up question.</p></div>
+      <form class="form" id="quote" novalidate>
+        <div class="row">
+          <div><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div><label for="company">Company</label><input id="company" name="company" autocomplete="organization"></div>
+        </div>
+        <div class="row">
+          <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="product">Product</label><select id="product" name="product"></select></div>
+        </div>
+        <div><label for="msg">Quantity, destination and delivery window</label><textarea id="msg" name="msg" placeholder="Example: 25,000 MT, discharge at Mombasa, loading in November"></textarea></div>
+        <button class="btn btn-primary" type="submit" style="justify-self:start">Send request</button>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </div>
+    <div class="info">
+      <div><h3>Petro Bridge Trading FZE</h3><p>Hamriyah Free Zone, Sharjah,<br>United Arab Emirates</p></div>
+      <div><h3>Call us</h3><p>Phone: <a href="tel:+97165269898">+971 6 526 9898</a><br>Mobile: <a href="tel:+971501234567">+971 50 123 4567</a></p></div>
+      <div><h3>Write to us</h3><p>Email: <a href="mailto:info@petrobridgetrading.com">info@petrobridgetrading.com</a><br>Web: <a href="https://www.petrobridgetrading.com">www.petrobridgetrading.com</a></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>Petro Bridge Trading FZE</h4><p>Hamriyah Free Zone, Sharjah,<br>United Arab Emirates</p></div>
+      <div><h4>Phone</h4><p><a href="tel:+97165269898">+971 6 526 9898</a><br><a href="tel:+971501234567">+971 50 123 4567</a></p></div>
+      <div><h4>Email and web</h4><p><a href="mailto:info@petrobridgetrading.com">info@petrobridgetrading.com</a><br>www.petrobridgetrading.com</p></div>
+      <p class="slogan">Your bridge to energy solutions worldwide.</p>
+    </div>
+    <div class="legal">&copy; <span id="yr">2026</span> Petro Bridge Trading FZE. All rights reserved.</div>
+  </div>
+  <div class="foot-curve" aria-hidden="true"></div>
+</footer>
+
+<script>
+(function(){
+  var products = [
+    {id:"crude", name:"Crude oil", desc:"Light, medium and heavy crude for refiners and traders, offered by grade and loading port.", grades:["Light sweet","Medium sour","Heavy"], delivery:["FOB loading port","CIF discharge port","Tank-to-tank transfer"], use:"Refining and blending."},
+    {id:"diesel", name:"Diesel", desc:"Automotive and industrial gasoil in the sulphur levels your market requires.", grades:["EN 590 (10 ppm)","D2 (500 ppm)","D2 (2,500 ppm)"], delivery:["FOB / CIF bulk vessel","Storage terminal delivery"], use:"Transport, power generation and industry."},
+    {id:"jet", name:"Jet fuel", desc:"Aviation turbine fuel supplied to recognised specifications with certificates of quality.", grades:["Jet A-1"], delivery:["CIF bulk vessel","Airport depot delivery"], use:"Commercial and charter aviation."},
+    {id:"gasoline", name:"Gasoline", desc:"Unleaded petrol in the octane grades sold in your destination market.", grades:["RON 91","RON 95","RON 98"], delivery:["FOB / CIF bulk vessel"], use:"Retail and wholesale fuel distribution."},
+    {id:"fuel-oil", name:"Fuel oil", desc:"Residual fuels for power plants, industry and marine bunkering.", grades:["Mazut M100","HSFO 3.5%","VLSFO 0.5%"], delivery:["FOB / CIF bulk vessel","Barge delivery"], use:"Power, industry and marine use."},
+    {id:"lpg", name:"LPG", desc:"Propane, butane and mixes for domestic, commercial and industrial gas markets.", grades:["Propane","Butane","Propane/butane mix"], delivery:["Pressurised vessel","Terminal delivery"], use:"Cooking, heating and petrochemical feedstock."},
+    {id:"bitumen", name:"Bitumen and base oil", desc:"Road-grade bitumen and lubricant base oils for construction and manufacturing buyers.", grades:["Bitumen 60/70","Bitumen VG-30","Base oil SN 150 / SN 500"], delivery:["Bulk","Drums","Flexitanks"], use:"Road building and lubricant blending."}
+  ];
+  var tabs = document.getElementById("tabs"), panel = document.getElementById("panel"), sel = document.getElementById("product");
+
+  function li(a){return a.map(function(x){return "<li>"+x+"</li>"}).join("")}
+  function show(i, focus){
+    var p = products[i];
+    Array.prototype.forEach.call(tabs.children, function(b,j){
+      b.setAttribute("aria-selected", j===i ? "true":"false");
+      b.tabIndex = j===i ? 0 : -1;
+    });
+    panel.setAttribute("aria-labelledby","tab-"+p.id);
+    panel.innerHTML =
+      '<div><h3>'+p.name+'</h3><p>'+p.desc+'</p></div>'+
+      '<dl><div><dt>Typical grades</dt><dd><ul class="chips">'+li(p.grades)+'</ul></dd></div>'+
+      '<div><dt>Delivery</dt><dd><ul class="chips">'+li(p.delivery)+'</ul></dd></div></dl>'+
+      '<div class="full"><strong>Common use:</strong> '+p.use+' &nbsp; <a class="btn btn-primary" style="margin-left:8px" href="#contact" data-pick="'+p.id+'">Request '+p.name.toLowerCase()+'</a></div>';
+    if(focus) tabs.children[i].focus();
+  }
+  products.forEach(function(p,i){
+    var b = document.createElement("button");
+    b.type="button"; b.role="tab"; b.id="tab-"+p.id; b.textContent=p.name;
+    b.setAttribute("role","tab"); b.setAttribute("aria-controls","panel");
+    b.addEventListener("click", function(){show(i,false)});
+    b.addEventListener("keydown", function(e){
+      if(e.key==="ArrowRight"){e.preventDefault();show((i+1)%products.length,true)}
+      if(e.key==="ArrowLeft"){e.preventDefault();show((i-1+products.length)%products.length,true)}
+    });
+    tabs.appendChild(b);
+    var o = document.createElement("option"); o.value=p.name; o.textContent=p.name; sel.appendChild(o);
+  });
+  var other = document.createElement("option"); other.value="Other"; other.textContent="Other product"; sel.appendChild(other);
+  show(1,false);
+
+  panel.addEventListener("click", function(e){
+    var a = e.target.closest("[data-pick]"); if(!a) return;
+    var p = products.filter(function(x){return x.id===a.getAttribute("data-pick")})[0];
+    if(p) sel.value = p.name;
+  });
+
+  // mobile menu
+  var mb = document.querySelector(".menu-btn"), nav = document.getElementById("nav");
+  mb.addEventListener("click", function(){
+    var o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o);
+  });
+  nav.addEventListener("click", function(e){ if(e.target.tagName==="A"){ nav.classList.remove("open"); mb.setAttribute("aria-expanded","false"); }});
+
+  // quote form -> opens the visitor's email app
+  var form = document.getElementById("quote"), status = document.getElementById("status");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = form.elements;
+    if(!f.name.value.trim() || !/^\S+@\S+\.\S+$/.test(f.email.value)){
+      status.textContent = "Please add your name and a valid email address.";
+      return;
+    }
+    var body = "Name: "+f.name.value+"\nCompany: "+f.company.value+"\nEmail: "+f.email.value+"\nProduct: "+f.product.value+"\n\n"+f.msg.value;
+    var url = "mailto:info@petrobridgetrading.com?subject="+encodeURIComponent("Quote request: "+f.product.value)+"&body="+encodeURIComponent(body);
+    status.textContent = "Opening your email app. If nothing opens, write to info@petrobridgetrading.com.";
+    window.location.href = url;
+  });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
